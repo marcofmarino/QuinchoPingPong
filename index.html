@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Ping Pong El Quincho</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Ping Pong El Quincho</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#singles">Singles</a></li>
+        <li><a href="#dobles">Dobles</a></li>
+      </ul>
+    </nav>
+    <section>
+      <input
+        type="text"
+        id="nombreParticipante"
+        placeholder="Nombre"
+        class="agregar"
+      />
+      <button onclick="agregarParticipante()" class="cta">
+        Agregar jugador
+      </button>
+      <div id="participantes"></div>
+    </section>
+    <section id="singles">
+      <h2>Singles</h2>
+      <div id="individuales"></div>
+      <div id="registroResultadosIndividuales"></div>
+      <div id="posicionesIndividuales"></div>
+    </section>
+    <section id="dobles">
+      <h2>Dobles</h2>
+      <div id="equipos"></div>
+      <div id="registroResultados"></div>
+      <div id="posiciones"></div>
+    </section>
+    <script src="scripts/torneoPingPong.js"></script>
+  </body>
+</html>
